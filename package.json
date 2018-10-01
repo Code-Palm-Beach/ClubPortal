@@ -1,34 +1,33 @@
 {
-  "name": "club_portal",
-  "version": "0.0.1",
-  "description": "A portal for students attending our monthly events",
-  "author": "Jeremy 'Jermbo' Lawson",
-  "license": "MIT",
+  "name": "clubportal",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "dev": "node ./node_modules/.bin/gulp __start-local__"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.24.4",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-babel": "^7.0.1",
-    "gulp-changed": "^3.2.0",
-    "gulp-eslint": "^4.0.2",
-    "gulp-jsbeautifier": "^2.1.2",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-notify": "^3.2.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-task-listing": "^1.0.1",
-    "run-sequence": "^2.2.1",
-    "yargs": "^11.0.0"
+    "start": "concurrently \"npm run watch\"",
+    "watch": "nodemon ./start"
   },
   "dependencies": {
-    "gulp-file-include": "^2.0.1"
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^6.0.0",
+    "ejs": "~2.5.7",
+    "es6-promisify": "^6.0.0",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "moment": "^2.22.2",
+    "mongoose": "^5.3.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "bable-loader": "0.0.1-security",
+    "concurrently": "^4.0.1",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4"
   }
 }
